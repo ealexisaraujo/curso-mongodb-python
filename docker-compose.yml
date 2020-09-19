@@ -1,4 +1,4 @@
-version: "3"
+version: '3'
 
 services:
   # Nombre contenedor
@@ -6,5 +6,7 @@ services:
     # image: platziapp
     build: .
     # Variables de entorno
+    volumes:
+      - ./platzi-api/:/usr/src/platzi-api
     ports:
-      - "5000:5000"
+      - '5000:5000'
